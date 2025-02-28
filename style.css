@@ -1,22 +1,145 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background: url('assets/shoe-banner.jpg') no-repeat center/cover;
+    position: relative;
 }
-section {
-    padding: 20px;
-    min-height: 100vh;
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
 }
-nav ul {
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.category-grid {
     display: flex;
     justify-content: center;
-    list-style: none;
-    background: #333;
+    gap: 20px;
+}
+
+.category-card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: scale(1.1);
+}
+
+/* Products */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 200px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.add-to-cart {
     padding: 10px;
-}
-nav ul li {
-    margin: 0 10px;
-}
-nav ul li a {
+    background: black;
     color: white;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background: white;
+    color: black;
+}
+
+/* Shopping Cart */
+.cart {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.checkout-btn {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Checkout */
+.checkout {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
 }
