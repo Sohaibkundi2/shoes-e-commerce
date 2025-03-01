@@ -28,6 +28,7 @@ nav{
     top: 0;
     z-index: 10;
     backdrop-filter: blur(5px);
+    background:linear-gradient(90deg, rgba(255, 255, 255, 100%) 0%, #eae1d6d5 100%);
 }
 
 
@@ -56,12 +57,63 @@ nav ul li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    
 }
 
+nav ul li a:hover {
+    color: #ff3b97;
+    transition: all ease 0.3s;
+}
+
+.cart-icon {
+    font-size: 25px;
+    color: #D36397;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.cart-icon:hover {
+    color: #ff3b97;
+    transition: all ease 0.3s;
+}
 .hero {
     font-weight: 600;
-    background: url(./Assets/banner.jpg);
+    height: 100vh;
+    background:linear-gradient(90deg, rgba(255, 255, 255, 100%) 0%, #eae1d6d5 100%);
+    margin-top: -33px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
 }
+
+.hero h1 {
+    font-size: 50px;
+    background: linear-gradient(90deg, #D36397, #ff3b97);
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 50px;
+}
+
+.swiper {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 300px;
+    margin: 50px;
+    margin-bottom: 0;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
 
 
 /* Categories */

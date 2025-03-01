@@ -6,6 +6,8 @@
     <title>Shoe Brand E-Commerce</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,12 +22,48 @@
                 <li><a href="#sports">sports</a></li>
                 <li><a href="#casual">casual</a></li>
             </ul>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span class="cart-count">0</span>
+            </div>
         </nav>
 
         <div class="hero">
-            <h1>Shoe Brand</h1>
-            <p>Shop the latest collection of shoes</p>
-            <a href="#categories" class="cta">Shop Now</a>
+            <h1>
+                Welcome to Shoe Brand
+            </h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-4.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-5.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-6.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-7.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Assets/image-8.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="Assets/image-9.png" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
 
     </header>
@@ -79,5 +117,6 @@
         </form>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
