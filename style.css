@@ -10,40 +10,59 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+  }
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px);
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
+
+nav .logo img {
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background: url('assets/shoe-banner.jpg') no-repeat center/cover;
-    position: relative;
+    gap: 2vw;
 }
 
-.hero-content {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 10px;
+nav ul li{
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
-.btn {
-    padding: 10px 20px;
-    font-size: 18px;
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+nav ul li a {
+    color: #D36397;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-.btn:hover {
-    background: white;
-    color: black;
+.hero {
+    font-weight: 600;
+    background: url(./Assets/banner.jpg);
 }
+
 
 /* Categories */
 .categories {

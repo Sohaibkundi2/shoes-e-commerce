@@ -1,10 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.from(".hero-content", { y: -50, opacity: 0, duration: 1 });
-    gsap.from(".category-card", { scale: 0, opacity: 0, duration: 0.5, stagger: 0.2 });
-    gsap.from(".product-card", { x: -50, opacity: 0, duration: 0.5, stagger: 0.2 });
-});
-
 const cartItems = [];
+
 const cartContainer = document.querySelector(".cart-items");
 const totalPriceElement = document.getElementById("total-price");
 
