@@ -18,6 +18,12 @@ header {
     text-align: center;
     background-color: #fff;
 }
+
+header h1 {
+    background: linear-gradient(to right, #D36397, #7fe7a7);
+    color: transparent;
+    -webkit-background-clip: text;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -26,6 +32,9 @@ nav{
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 10;
     backdrop-filter: blur(5px);
     background:linear-gradient(90deg, rgba(255, 255, 255, 100%) 0%, #eae1d6d5 100%);
@@ -90,7 +99,7 @@ nav ul li a:hover {
 
 .hero h1 {
     font-size: 50px;
-    background: linear-gradient(90deg, #D36397, #ff3b97);
+    background: linear-gradient(90deg, #D36397, #f59505);
     color: transparent;
     -webkit-background-clip: text;
     padding-top: 50px;
@@ -105,8 +114,14 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     max-width: 300px;
-    margin: 50px;
-    margin-bottom: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2), 0 5px 15px rgba(255, 255, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .swiper-slide h2{
+    background: linear-gradient(90deg, #750052, #ad2800);
+    color: transparent;
+    -webkit-background-clip: text;
   }
 
   .swiper-slide img {
@@ -116,12 +131,17 @@ nav ul li a:hover {
 
 
 
-/* Categories */
+/* ...................Categories................ */
 .categories {
     text-align: center;
     padding: 50px 20px;
 }
-
+.categories h2{
+    font-size: 50px;
+    background: linear-gradient(90deg, #D36397, #f59505);
+    color: transparent;
+    -webkit-background-clip: text;
+}
 .category-grid {
     display: flex;
     justify-content: center;
@@ -134,21 +154,39 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: rgb(255, 255, 255);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 22px;
+    border: 1px solid #ff3b97;
+}
+
+.category-card a{
+    color: #D36397;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.category-card a:hover{
+    color: #ff3b97;
     transition: 0.3s;
 }
 
 .category-card:hover {
     transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2), 0 5px 15px rgba(255, 255, 0, 0.3);
 }
 
 /* Products */
 .products {
     text-align: center;
     padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
 }
 
 .product-grid {
@@ -179,7 +217,7 @@ nav ul li a:hover {
 }
 
 .add-to-cart:hover {
-    background: white;
+    background: rgb(199, 199, 199);
     color: black;
 }
 
@@ -198,8 +236,8 @@ nav ul li a:hover {
 }
 
 .checkout-btn:hover {
-    background: white;
-    color: black;
+    background: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
 }
 
 /* Checkout */
@@ -208,9 +246,78 @@ nav ul li a:hover {
     padding: 50px 20px;
 }
 
-form input {
-    display: block;
-    margin: 10px auto;
+/*.................. check out section .............. */
+
+#checkout {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#checkout h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#checkout form {
+    display: flex;
+    flex-direction: column;
+}
+
+#checkout input {
     padding: 10px;
-    width: 80%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+#checkout input:focus {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#checkout p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #444;
+}
+
+#checkout button {
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#checkout button:hover {
+    background: #e65c00;
+}
+
+
+/* Footer */
+.logo-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #D36397;
+}
+
+footer {
+    text-align: center;
+    padding:20px;
+    background: #333;
+    color: white;
 }

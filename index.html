@@ -5,96 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Brand E-Commerce</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="script.js" defer></script>
+    <script src="cart.js" defer></script>
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="./Assets/shoe-logo.jpg" alt="Shoe Brand Logo">
+        </div>
+        <ul>
+            <li><a href="sneaker.html">Sneakers</a></li>
+            <li><a href="formals.html">Formals</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="casual.html">Casual</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="./Assets/shoe-logo.jpg" alt="">
-            </div>
-            <ul>
-                <li><a href="#sneaker">sneaker</a></li>
-                <li><a href="#formals">formals</a></li>
-                <li><a href="#sports">sports</a></li>
-                <li><a href="#casual">casual</a></li>
-            </ul>
-            <div class="cart-icon">
-                <i class="fa-solid fa-cart-plus"></i>
-                <span class="cart-count">0</span>
-            </div>
-        </nav>
-
         <div class="hero">
-            <h1>
-                Welcome to Shoe Brand
-            </h1>
+            <h1>Welcome to Shoe Brand</h1>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-2.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-3.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-4.avif" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-5.avif" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-6.avif" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-7.avif" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./Assets/image-8.avif" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="Assets/image-9.png" />
-                  </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-1.jpg" />
+                        <h2>Adidas Collection</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-2.jpg" />
+                        <h2>Puma Exclusive</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-3.jpg" />
+                        <h2>Reebok Classics</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-4.avif" />
+                        <h2>Under Armour</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-5.avif" />
+                        <h2>New Balance</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-6.avif" />
+                        <h2>Converse Collection</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-7.avif" />
+                        <h2>Jordan Series</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Assets/image-8.avif" />
+                        <h2>Fila Selection</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/image-9.png" />
+                        <h2>ASICS Performance</h2>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
-              </div>
+            </div>
         </div>
-
     </header>
 
     <!-- Categories Section -->
     <section id="categories" class="categories">
         <h2>Shop by Category</h2>
         <div class="category-grid">
-            <div class="category-card sneakers">Sneakers</div>
-            <div class="category-card formal">Formal</div>
-            <div class="category-card sports">Sports</div>
-            <div class="category-card casual">Casual</div>
-        </div>
-    </section>
-
-    <!-- Product Listing -->
-    <section id="products" class="products">
-        <h2>Featured Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="assets/shoe1.jpg" alt="Shoe">
-                <h3>Sneaker #1</h3>
-                <p>$120</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="assets/shoe2.jpg" alt="Shoe">
-                <h3>Formal Shoe</h3>
-                <p>$150</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
+            <div class="category-card sneakers"><a href="sneaker.html">Sneakers</a></div>
+            <div class="category-card formal"><a href="formals.html">Formal</a></div>
+            <div class="category-card sports"><a href="sports.html">Sports</a></div>
+            <div class="category-card casual"><a href="casual.html">Casual</a></div>
         </div>
     </section>
 
@@ -104,17 +91,6 @@
         <div class="cart-items"></div>
         <p>Total: <span id="total-price">$0</span></p>
         <button class="checkout-btn">Proceed to Checkout</button>
-    </section>
-
-    <!-- Checkout Form -->
-    <section id="checkout" class="checkout">
-        <h2>Checkout</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Address" required>
-            <input type="text" placeholder="Contact Number" required>
-            <button type="submit">Confirm Order</button>
-        </form>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
